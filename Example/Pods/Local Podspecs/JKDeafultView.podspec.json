@@ -1,0 +1,22 @@
+{
+  "name": "JKDeafultView",
+  "version": "0.1.0",
+  "summary": "A short description of JKDeafultView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/daquan/JKDeafultView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "daquan": "xudaquan@ybm100.com"
+  },
+  "source": {
+    "git": "https://github.com/daquan/JKDeafultView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JKDeafultView/Classes/**/*"
+}

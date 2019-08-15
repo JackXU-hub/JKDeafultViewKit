@@ -1,0 +1,6 @@
+framework module JKDeafultView {
+  umbrella header "JKDeafultView-umbrella.h"
+
+  export *
+  module * { export * }
+}

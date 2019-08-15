@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JKDeafultView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JKDeafultView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  JKDeafultView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JKDeafultView: daa610efb76dbc5538c9d78ce974dc31ff818ab7
+
+PODFILE CHECKSUM: 597001d5a295125bb46d982321fe2ada5208d9a0
+
+COCOAPODS: 1.7.0

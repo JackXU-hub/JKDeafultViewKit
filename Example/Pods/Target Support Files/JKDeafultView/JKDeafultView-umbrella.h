@@ -11,6 +11,7 @@
 #endif
 
 #import "JKDefaultView.h"
+#import "UIColor+Hex.h"
 
 FOUNDATION_EXPORT double JKDeafultViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKDeafultViewVersionString[];

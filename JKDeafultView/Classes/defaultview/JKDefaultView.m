@@ -4,7 +4,7 @@
 
 #import "JKDefaultView.h"
 #import "UIColor+Hex.h"
-//#import <Masonry.h>
+#import <Masonry/Masonry.h>
 @implementation JKDefaultView
 
 + (instancetype)defaultView:(NSString *)imageName withTitle:(NSString *)title
@@ -53,24 +53,24 @@
     self.btn.titleLabel.font = [UIFont systemFontOfSize:14];
     self.btn.hidden = !self.isShow;
     [self addSubview:self.btn];
-//    [self.imageview mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerX.equalTo(self.mas_centerX);
-//        make.centerY.equalTo(self.mas_centerY).offset(-15);
-//        make.height.equalTo(@135);
-//        make.width.equalTo(@181);
-//    }];
-//    [self.lab mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.imageview.mas_bottom).offset(10);
-//        make.centerX.equalTo(self.imageview.mas_centerX);
-//        make.left.equalTo(self.mas_left).offset(15);
-//        make.right.equalTo(self.mas_right).offset(-15);
-//    }];
-//    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.lab.mas_bottom).offset(20);
-//        make.height.equalTo(@30);
-//        make.width.equalTo(@80);
-//        make.centerX.equalTo(self.lab.mas_centerX);
-//    }];
+    [self.imageview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.mas_centerX);
+        make.centerY.equalTo(self.mas_centerY).offset(-15);
+        make.height.equalTo(@135);
+        make.width.equalTo(@181);
+    }];
+    [self.lab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.imageview.mas_bottom).offset(10);
+        make.centerX.equalTo(self.imageview.mas_centerX);
+        make.left.equalTo(self.mas_left).offset(15);
+        make.right.equalTo(self.mas_right).offset(-15);
+    }];
+    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.lab.mas_bottom).offset(20);
+        make.height.equalTo(@30);
+        make.width.equalTo(@80);
+        make.centerX.equalTo(self.lab.mas_centerX);
+    }];
 }
     
 - (void)reload:(UIButton *)reloadBtn{
@@ -86,12 +86,12 @@
         return;
     }
     [view addSubview:self];
-//    [self mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo (view.mas_top);
-//        make.left.equalTo(view.mas_left);
-//        make.width.equalTo(view.mas_width);
-//        make.height.equalTo(view.mas_height);
-//    }];
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo (view.mas_top);
+        make.left.equalTo(view.mas_left);
+        make.width.equalTo(view.mas_width);
+        make.height.equalTo(view.mas_height);
+    }];
 }
 
 -(void)showOnView:(UIView *)view type:(DefeatViewType)type{

@@ -1,4 +1,4 @@
-framework module Pods_JKDeafultView_Tests {
+module Pods_JKDeafultView_Tests {
   umbrella header "Pods-JKDeafultView_Tests-umbrella.h"
 
   export *

@@ -7,7 +7,7 @@
 //
 
 #import "JKViewController.h"
-
+#import <JKDefaultView.h>
 @interface JKViewController ()
 
 @end
@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    JKDefaultView *defV = [JKDefaultView defaultView:@"wwww" withTitle:@"eeeeee"];
+    [defV showOnView:self.view type:DefeatViewNoData];
 }
 
 - (void)didReceiveMemoryWarning

@@ -4,7 +4,6 @@
 
 #import "JKDefaultView.h"
 #import "UIColor+Hex.h"
-#import "UIImage+JKBundle.h"
 #import <Masonry/Masonry.h>
 @implementation JKDefaultView
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKDeafultView'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '网络缺省页'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'JKDeafultView/Classes/**/*'
   
   s.resource_bundles = {
-     'JKDeafultView' => ['JKDeafultView/Assets/*.png']
+     'JKDeafultView' => ['JKDeafultView/Assets/**/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

@@ -17,8 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    JKDefaultView *defV = [JKDefaultView defaultView:@"wwww" withTitle:@"eeeeee"];
-    [defV showOnView:self.view type:DefeatViewNoData];
+    JKDefaultView *defV = [JKDefaultView defaultView:@"" withTitle:@""];
+    [defV showOnView:self.view img:@"noData" title:@"暂无数据" y:50];
 }
 
 - (void)didReceiveMemoryWarning

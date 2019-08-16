@@ -101,108 +101,21 @@
     [self showOnView:view];
 }
 
--(void)showOnView:(UIView *)view type:(DefeatViewType)type{
-    switch (type) {
-        case DefeatViewNoData:
-        {
-            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无数据";
-            [self showOnView:view];
-        }
-        break;
-        
-        case DefeatViewNoNetWork:
-        {
-            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无网络";
-            [self showOnView:view];
-        }
-        break;
-        case DefeatViewNetWorkBusy:
-        {
-            //defeaultView =  [JKDefaultView defaultView:@"netBusy" withTitle:@"网络繁忙"];
-            self.imageview.image =  [UIImage  jk_imgWithName:@"netBusy" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"网络繁忙";
-            [self showOnView:view];
-        }
-        break;
-        case DefeatViewNoSearchResult:
-        {
-            //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无搜索结果";
-            [self showOnView:view];
-        }
-        break;
-        case DefeatViewNoAuthority:
-        {
-            //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage  jk_imgWithName:@"noAuthority" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无权限查看";
-            [self showOnView:view];
-        }
-
-            break;
-        default:
-        break;
-    }
-}
 
 - (void)showDownView:(UIView *)view y:(CGFloat)y{
     if (view == nil) {
         return;
     }
     [view addSubview:self];
-    self.frame = CGRectMake(0, y, [UIApplication sharedApplication].keyWindow.bounds.size.width, view.frame.size.height-y);
+    self.frame = CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, view.frame.size.height-y);
 }
-    
--(void)showOnView:(UIView *)view type:(DefeatViewType)type y:(CGFloat)y{
-    switch (type) {
-        case DefeatViewNoData:
-        {
-            self.imageview.image =[UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无数据";
-            [self showDownView:view y:y];
-        }
-        break;
-        
-        case DefeatViewNoNetWork:
-        {
-            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无网络";
-             [self showDownView:view y:y];
-        }
-        break;
-        case DefeatViewNetWorkBusy:
-        {
-            //defeaultView =  [JKDefaultView defaultView:@"netBusy" withTitle:@"网络繁忙"];
-            self.imageview.image = [UIImage  jk_imgWithName:@"netBusy" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"网络繁忙";
-             [self showDownView:view y:y];
-        }
-        break;
-        case DefeatViewNoSearchResult:
-        {
-            //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
-            self.lab.text = @"暂无搜索结果";
-            [self showDownView:view y:y];
-        }
-        break;
-        case DefeatViewNotAll:
-        {
-            //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = nil;
-            self.lab.text = @"";
-            [self showDownView:view y:y];
-        }
-            break;
-            
-            
-        default:
-        break;
-    }
+
+- (void)showOnView:(UIView *)view img:(NSString*)img title:(NSString*)title y:(CGFloat)y{
+    self.imageview.image = [UIImage  imageNamed:img];
+    self.lab.text = title;
+    [self showDownView:view y:y];
 }
+
 - (void)dismiss
 {
     [self removeFromSuperview];

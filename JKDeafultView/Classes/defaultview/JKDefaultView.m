@@ -4,6 +4,7 @@
 
 #import "JKDefaultView.h"
 #import "UIColor+Hex.h"
+#import "UIImage+JKBundle.h"
 #import <Masonry/Masonry.h>
 @implementation JKDefaultView
 
@@ -98,7 +99,7 @@
     switch (type) {
         case DefeatViewNoData:
         {
-            self.imageview.image = [UIImage imageNamed:@"noData"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无数据";
             [self showOnView:view];
         }
@@ -106,7 +107,7 @@
         
         case DefeatViewNoNetWork:
         {
-            self.imageview.image = [UIImage imageNamed:@"noNet"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无网络";
             [self showOnView:view];
         }
@@ -114,7 +115,7 @@
         case DefeatViewNetWorkBusy:
         {
             //defeaultView =  [JKDefaultView defaultView:@"netBusy" withTitle:@"网络繁忙"];
-            self.imageview.image = [UIImage imageNamed:@"netBusy"];
+            self.imageview.image =  [UIImage  jk_imgWithName:@"netBusy" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"网络繁忙";
             [self showOnView:view];
         }
@@ -122,7 +123,7 @@
         case DefeatViewNoSearchResult:
         {
             //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage imageNamed:@"noData"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无搜索结果";
             [self showOnView:view];
         }
@@ -130,7 +131,7 @@
         case DefeatViewNoAuthority:
         {
             //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage imageNamed:@"noAuthority"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noAuthority" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无权限查看";
             [self showOnView:view];
         }
@@ -153,7 +154,7 @@
     switch (type) {
         case DefeatViewNoData:
         {
-            self.imageview.image = [UIImage imageNamed:@"noData"];
+            self.imageview.image =[UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无数据";
             [self showDownView:view y:y];
         }
@@ -161,7 +162,7 @@
         
         case DefeatViewNoNetWork:
         {
-            self.imageview.image = [UIImage imageNamed:@"noNet"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无网络";
              [self showDownView:view y:y];
         }
@@ -169,7 +170,7 @@
         case DefeatViewNetWorkBusy:
         {
             //defeaultView =  [JKDefaultView defaultView:@"netBusy" withTitle:@"网络繁忙"];
-            self.imageview.image = [UIImage imageNamed:@"netBusy"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"netBusy" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"网络繁忙";
              [self showDownView:view y:y];
         }
@@ -177,7 +178,7 @@
         case DefeatViewNoSearchResult:
         {
             //defeaultView = [JKDefaultView defaultView:@"noData" withTitle:@"暂无搜索结果"];
-            self.imageview.image = [UIImage imageNamed:@"noData"];
+            self.imageview.image = [UIImage  jk_imgWithName:@"noData" bundle:@"JKDefaultView" targetClass:[self class]];
             self.lab.text = @"暂无搜索结果";
             [self showDownView:view y:y];
         }

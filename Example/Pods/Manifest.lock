@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JKDeafultView (0.1.5):
+  - JKDeafultView (0.1.6):
     - Masonry (~> 1.0.1)
   - Masonry (1.0.2)
 
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JKDeafultView: 30b3fd631ebe2cdf432bb6b7b87f47c5b119aa45
+  JKDeafultView: d99771051eb242e132f001e085f36d747ad33f08
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
 
 PODFILE CHECKSUM: 597001d5a295125bb46d982321fe2ada5208d9a0

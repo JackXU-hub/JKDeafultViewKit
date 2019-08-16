@@ -35,6 +35,7 @@ typedef void(^DidReloadAction)(id obj);
 //显示在指定view上，居中显示  type 类型
 -(void)showOnView:(UIView *)view type:(DefeatViewType)type;
 
+- (void)showOnView:(UIView *)view img:(NSString*)img title:(NSString*)title;
 
 //移除
 - (void)dismiss;

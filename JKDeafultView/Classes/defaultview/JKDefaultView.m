@@ -95,6 +95,12 @@
     }];
 }
 
+- (void)showOnView:(UIView *)view img:(NSString*)img title:(NSString*)title{
+    self.imageview.image = [UIImage  imageNamed:img];
+    self.lab.text = title;
+    [self showOnView:view];
+}
+
 -(void)showOnView:(UIView *)view type:(DefeatViewType)type{
     switch (type) {
         case DefeatViewNoData:

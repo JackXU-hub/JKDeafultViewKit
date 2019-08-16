@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKDeafultView'
-  s.version          = '1.1.0'
+  s.version          = '1.1.2'
   s.summary          = '网络缺省页'
 
 # This description is used to generate tags and improve search results.
